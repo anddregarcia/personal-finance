@@ -48,6 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Account.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Transactions.cs" />
+    <Compile Include="Entities\TransactionType.cs" />
+    <Compile Include="Enumerators\EAccountType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
