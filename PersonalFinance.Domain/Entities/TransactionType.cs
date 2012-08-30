@@ -17,7 +17,9 @@ namespace PersonalFinance.Domain.Entities
         [Display(Name = "Nome")]
         public string Name { get; set; }
 
-        public EAccountType AccountType { get; set; }
+        [Required(ErrorMessage = "O campo é obrigatório")]
+        [Display(Name = "Tipo de conta")]        
+        public virtual EAccountType AccountType { get; set; }
 
     }
 }
