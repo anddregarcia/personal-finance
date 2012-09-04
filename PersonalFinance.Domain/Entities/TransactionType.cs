@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
 using PersonalFinance.Domain.Enumerators;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PersonalFinance.Domain.Entities
 {
