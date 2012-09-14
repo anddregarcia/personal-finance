@@ -12,14 +12,17 @@ namespace PersonalFinance.Domain.Entities
     {
         public int Id { get; set; }
 
+        public int AccountID { get; set; }
         [Required(ErrorMessage = "O campo é obrigatório")]
         [Display(Name = "Conta")]
-        public virtual Account Account { get; set; }
+        public virtual Accounts Account { get; set; }
 
+        public int TransactionTypeID { get; set; }
         [Required(ErrorMessage = "O campo é obrigatório")]
         [Display(Name = "Tipo de transação")]
         public virtual TransactionType TransactionType { get; set; }
 
+        public int CategoryID { get; set; }
         [Required(ErrorMessage = "O campo é obrigatório")]
         [Display(Name = "Categoria")]
         public virtual Category Category { get; set; }

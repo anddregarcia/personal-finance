@@ -1,0 +1,93 @@
+﻿@model PersonalFinance.Domain.Entities.Accounts
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Accounts</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Limit)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Limit)
+            @Html.ValidationMessageFor(model => model.Limit)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.InterestRate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.InterestRate)
+            @Html.ValidationMessageFor(model => model.InterestRate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DueDay)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DueDay)
+            @Html.ValidationMessageFor(model => model.DueDay)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ClosureDay)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ClosureDay)
+            @Html.ValidationMessageFor(model => model.ClosureDay)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.InitialBalance)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.InitialBalance)
+            @Html.ValidationMessageFor(model => model.InitialBalance)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Balance)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Balance)
+            @Html.ValidationMessageFor(model => model.Balance)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UseInGlobalBalance)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UseInGlobalBalance)
+            @Html.ValidationMessageFor(model => model.UseInGlobalBalance)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace PersonalFinance.Domain.Entities
 {
     [Table("Accounts")]
-    public class Account
+    public class Accounts
     {
         public int Id { get; set; }
 
@@ -20,7 +20,7 @@ namespace PersonalFinance.Domain.Entities
 
         [Display(Name = "Tipo de conta")]
         [Required(ErrorMessage = "O campo é obrigatório")]
-        public virtual EAccountType AccountType { get; set; }
+        public EAccountType AccountType { get; set; }
 
         [Display(Name = "Limite da conta")]
         [DataType(DataType.Currency)]

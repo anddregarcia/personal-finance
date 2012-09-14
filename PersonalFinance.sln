@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.Service.Tests", "PersonalFinance.Service.Tests\PersonalFinance.Service.Tests.csproj", "{3BBCE6AC-A64D-4538-BB6E-4BF198D769AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.Context", "PersonalFinance.Context\PersonalFinance.Context.csproj", "{5AF1CC28-D32E-4E6F-AFA5-AA125F8E6397}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = PersonalFinance.vsmdi
@@ -50,6 +52,10 @@ Global
 		{3BBCE6AC-A64D-4538-BB6E-4BF198D769AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BBCE6AC-A64D-4538-BB6E-4BF198D769AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BBCE6AC-A64D-4538-BB6E-4BF198D769AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF1CC28-D32E-4E6F-AFA5-AA125F8E6397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF1CC28-D32E-4E6F-AFA5-AA125F8E6397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF1CC28-D32E-4E6F-AFA5-AA125F8E6397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF1CC28-D32E-4E6F-AFA5-AA125F8E6397}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
